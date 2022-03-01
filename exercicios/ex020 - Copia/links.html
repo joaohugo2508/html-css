@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    /*SELETORES PERSONALIZADOS
+      #  = id*
+      .  = class
+      :  = pseudoclass
+      :: = pseudoelement
+      >  = children*/
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color: red;  
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:visited{
+        color: darkred;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .especial{
+        background-color: aqua;
+
+    }
+    .especial::before{
+        content:'▶';
+        color: darkgrey;
+    }
+    .especial::after{
+        content: '◀';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgrey;
+    }
+</style>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/c/LivesAlanzoka" rel="external" target="_blank">Canal Alanzoka</a></li>
+        <li><a href="https://www.youtube.com/c/KairosTreinamentos" target="_blank" rel="external" class="especial">Canal Wendel Carvalho</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

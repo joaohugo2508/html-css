@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title>Modelo de Caixas</title>
+    </head>
+    <style>
+        h1{ /*box-level*/
+            height: 300px;
+            width: 300px;
+            background-color: lightsteelblue;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgrey;
+
+            padding-top: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+        }
+        a{ /*inline-level*/
+            border-width:10px;
+            border-color: red;
+            border-style: solid;
+        }
+        
+    </style>
+    <body>
+        <h1>Exemplo de Caixa box-level</h1>
+        <p>Parágrafos também são exemplos de box-level, mas os <a href="https://jcw87.github.io/c2-sans-fight/" target="_blank" rel="external">links são exemplos de caixas inline-level</a></p>
+    </body>
+</html>
