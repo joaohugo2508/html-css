@@ -12,8 +12,17 @@
         }
 
         table {
-            width: 500px;
+            width: 600px;
+            height: 300px;
             border-collapse: collapse;
+            margin: auto;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightslategrey;
         }
 
         td, th {
@@ -22,7 +31,8 @@
         }
 
         thead, tfoot {
-            background-color: grey;
+            background-color: rgb(46, 44, 44);
+            color: white;
         }
         
         td.num {
@@ -36,16 +46,18 @@
     <!--
         Anatomia Para tabelas grandes
         TABLE
+           Caption 
             T HEAD {TR, TD, TH}
                 T BODY {TR, TD, TH}
                     T FOOT {TR, TD, TH}
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
